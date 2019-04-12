@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <!-- <form>  -->
+           <div class="form-group">
+               <label for="productName">Product Name</label>
+               <input id="productName" type="text" name="pname"><br> 
+           </div>
+           <div class="form-group">
+             <label for="productPrice">Product Price</label>  
+             <input id="productPrice" type="text" name="price"><br>
+           </div>
+            <div class="form-group"> 
+              <label for="productQUANTITY">Product Quantity</label> 
+              <input id="productQuantity" type="number" min='1' name="pquantity"><br>
+            </div>
+            <div class="form-group">
+                 <select id="mySelect">
+                  <option id="selectedVendor">Apple</option>
+                  </select>
+            </div>
+              <!-- <input id="addProduct" type="submit" value="ADD"></input> -->
+           <button id="addProduct"  value="ADD">ADD</button>
+           <a href = "index.html"> Login </a>
+       
+<div class="container">
+ 
+   <ul id='productList'></ul>
+</div>
+  
+   <div class="container">
+   <a href="vendor.html">Vendor Page</a> 
+   </div>
+    <script src="jquery.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
