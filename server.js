@@ -243,8 +243,8 @@ app.post('/carts/delete', async (req, res) => {
     res.send({ success: false, err: e.message })
   }
 })
-const PORT = process.env.PORT || 5500
+
 db.sync()
   .then(() => {
-    app.listen(PORT, () => console.log('server is running'))
+    app.listen(5500, () => console.log('server is running'))
   })
